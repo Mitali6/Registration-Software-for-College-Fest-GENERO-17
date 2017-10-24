@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="893.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="register.front.FrontController">
+   <children>
+      <VBox layoutX="1.0" layoutY="2.0" prefHeight="581.0" prefWidth="778.0">
+         <children>
+            <Label prefHeight="130.0" prefWidth="901.0" text=" WELCOME TO GENERO'17 " textFill="#e50909">
+               <font>
+                  <Font name="Constantia" size="69.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="295.0" prefWidth="767.0">
+               <children>
+                  <ImageView fitHeight="256.0" fitWidth="406.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/WhatsApp%20Image%202017-08-25%20at%2011.39.09%20AM(1).jpeg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="300.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children></HBox>
+            <HBox prefHeight="151.0" prefWidth="767.0">
+               <children>
+                  <JFXButton contentDisplay="TOP" onAction="#register" prefHeight="150.0" prefWidth="192.0" style="-fx-background-color: ff5252;" text="REGISTER">
+                     <graphic>
+                        <ImageView fitHeight="111.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/add-user-icon_326510.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#gaming" prefHeight="150.0" prefWidth="192.0" style="-fx-background-color: C0CA33;" text="E-GAMING">
+                     <graphic>
+                        <ImageView fitHeight="112.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/Games-Folder-128.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#analysis" prefHeight="150.0" prefWidth="192.0" style="-fx-background-color: F4511E;" text="ANALYSIS">
+                     <graphic>
+                        <ImageView fitHeight="111.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/591008-200.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton contentDisplay="TOP" layoutX="202.0" layoutY="10.0" onAction="#search" prefHeight="150.0" prefWidth="192.0" style="-fx-background-color: #7070db;" text="SEARCH">
+                     <graphic>
+                        <ImageView fitHeight="111.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/active-search-2-xxl.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" onAction="#total" prefHeight="150.0" prefWidth="192.0" style="-fx-background-color: EA80FC;" text="TOTAL">
+                     <graphic>
+                        <ImageView fitHeight="111.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/math-mathematical-function-summ-total-512.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton contentDisplay="TOP" layoutX="640.0" layoutY="10.0" onAction="#logout" prefHeight="150.0" prefWidth="192.0" style="-fx-background-color: #ffff4d;" text="LOGOUT">
+                     <graphic>
+                        <ImageView fitHeight="111.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/56805.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

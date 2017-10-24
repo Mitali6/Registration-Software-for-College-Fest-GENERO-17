@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="284.0" prefWidth="409.0" style="-fx-background-color: #D3F7F9;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="register.login.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="1.0" layoutY="1.0" prefHeight="91.0" prefWidth="409.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="408.0" text="LOGIN" textFill="#133168">
+               <font>
+                  <Font name="Broadway" size="60.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="1.0" layoutY="84.0" prefHeight="191.0" prefWidth="408.0">
+         <children>
+            <JFXTextField fx:id="name" labelFloat="true" promptText="Enter name">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" labelFloat="true" promptText="Enter password">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="30.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <JFXButton onAction="#login" onKeyPressed="#login" prefHeight="25.0" prefWidth="86.0" text="Login">
+               <VBox.margin>
+                  <Insets left="160.0" top="30.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

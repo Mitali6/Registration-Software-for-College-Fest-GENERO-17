@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="547.0" prefWidth="650.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="register.eGaming.EGamingController">
+    <stylesheets>
+        <URL value="@egaming.css" />
+    </stylesheets>
+   <children>
+      <HBox prefHeight="94.0" prefWidth="650.0">
+         <children>
+            <Label text="E-Gaming" textFill="#040675">
+               <HBox.margin>
+                  <Insets left="200.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="2.0" layoutY="94.0" prefHeight="299.0" prefWidth="313.0">
+         <children>
+            <Label text="Select Your Choice" textFill="#329ac3">
+               <VBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <JFXRadioButton text="Counter Strike (350)" textFill="#3f7390">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="radio" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton layoutX="20.0" layoutY="43.0" text="Call Of Duty (210)" textFill="#3f7390" toggleGroup="$radio">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXRadioButton>
+            <JFXRadioButton layoutX="20.0" layoutY="65.0" text="Tekken (60)" textFill="#3f7390" toggleGroup="$radio">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXRadioButton>
+            <JFXRadioButton layoutX="20.0" layoutY="87.0" text="Cricket (60)" textFill="#3f7390" toggleGroup="$radio">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXRadioButton>
+            <JFXRadioButton layoutX="20.0" layoutY="109.0" text="Fifa (60)" textFill="#3f7390" toggleGroup="$radio">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXRadioButton>
+            <JFXRadioButton layoutX="10.0" layoutY="126.0" text="NFS-MW (60)" textFill="#3f7390" toggleGroup="$radio">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXRadioButton>
+            <JFXRadioButton layoutX="20.0" layoutY="243.0" text="Mini Militia (150)" textFill="#3f7390" toggleGroup="$radio">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXRadioButton>
+         </children>
+      </VBox>
+      <VBox layoutX="323.0" layoutY="94.0" prefHeight="412.0" prefWidth="321.0">
+         <children>
+            <Label text="Details" textFill="#329ac3">
+               <font>
+                  <Font name="Calibri Bold Italic" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="120.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="name" labelFloat="true" promptText="Name">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="branch" labelFloat="true" layoutX="20.0" layoutY="48.0" promptText="Branch">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="email" labelFloat="true" layoutX="10.0" layoutY="73.0" promptText="Email Id">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="contact" labelFloat="true" layoutX="10.0" layoutY="73.0" promptText="Contact">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="register" labelFloat="true" layoutX="20.0" layoutY="153.0" promptText="Registration Number">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="receipt" labelFloat="true" layoutX="20.0" layoutY="218.0" promptText="Receipt Number">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="choice" labelFloat="true" layoutX="20.0" layoutY="258.0" promptText="Choice">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="member" labelFloat="true" layoutX="20.0" layoutY="338.0" promptText="Member">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="amount" labelFloat="true" layoutX="20.0" layoutY="378.0" promptText="Amount">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="date" labelFloat="true" layoutX="20.0" layoutY="418.0" promptText="Date">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+         </children></VBox>
+      <HBox layoutX="10.0" layoutY="375.0" prefHeight="63.0" prefWidth="313.0">
+         <children>
+            <JFXTextField fx:id="adm_num" prefHeight="25.0" prefWidth="551.0" promptText="Admission Number">
+               <HBox.margin>
+                  <Insets left="5.0" top="30.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <ImageView fitHeight="32.0" fitWidth="32.0" onDragDetected="#info" onMouseClicked="#info" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="10.0" top="23.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../Icons/active-search-2-xxl.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="2.0" layoutY="521.0" prefHeight="78.0" prefWidth="328.0" AnchorPane.topAnchor="521.0">
+         <children>
+            <JFXButton onAction="#submit" prefHeight="35.0" prefWidth="115.0" text="Submit">
+               <HBox.margin>
+                  <Insets top="60.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="10.0" onAction="#reset" prefHeight="37.0" prefWidth="110.0" text="Reset">
+               <HBox.margin>
+                  <Insets top="60.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="cancel" layoutX="10.0" layoutY="10.0" onAction="#cancel" prefHeight="39.0" prefWidth="103.0" text="Cancel">
+               <HBox.margin>
+                  <Insets top="60.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <JFXTextField fx:id="regNum" labelFloat="true" layoutX="14.0" layoutY="452.0" prefHeight="25.0" prefWidth="261.0" promptText="Receipt Number" />
+      <JFXTextField fx:id="registration" labelFloat="true" layoutX="14.0" layoutY="496.0" prefHeight="25.0" prefWidth="261.0" promptText="Registration Number" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="599.0" prefWidth="638.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="register.search.SearchController">
+    <stylesheets>
+        <URL value="@search.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="500.0" prefWidth="639.0">
+         <children>
+            <Label prefHeight="106.0" prefWidth="637.0" text="            SEARCH" textFill="#6f1265">
+               <font>
+                  <Font name="Harrington" size="66.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="41.0" prefWidth="639.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="220.0" text="Enter Admission Number:" textFill="#e00954d6">
+                     <font>
+                        <Font name="Constantia" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="admissionNumber" focusColor="#4d4d4dd9" labelFloat="true" prefHeight="25.0" prefWidth="180.0" promptText="Admission Number" unFocusColor="#e00954">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXButton cancelButton="true" defaultButton="true" onAction="#regular" style="-fx-background-color: #d580ff;" text="Regular">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Consolas" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton cancelButton="true" defaultButton="true" layoutX="455.0" layoutY="10.0" onAction="#gaming" style="-fx-background-color: #d580ff;" text="e-Gaming">
+                     <font>
+                        <Font name="Consolas" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="590.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="23.0" prefWidth="103.0" text="Name" textFill="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Constantia" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="name" focusColor="#e00954" labelFloat="true" prefHeight="25.0" prefWidth="291.0" promptText="Name" unFocusColor="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="100.0" right="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="174.0" prefHeight="37.0" prefWidth="590.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="103.0" text="Branch" textFill="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Constantia" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="branch" focusColor="#e00954" labelFloat="true" prefHeight="25.0" prefWidth="290.0" promptText="Branch" unFocusColor="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="211.0" prefHeight="37.0" prefWidth="590.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="103.0" text="Email Id" textFill="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Constantia" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="emailId" focusColor="#e00954" labelFloat="true" prefHeight="25.0" prefWidth="289.0" promptText="Email Id" unFocusColor="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="248.0" prefHeight="37.0" prefWidth="590.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="103.0" text="Contact" textFill="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Constantia" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="contact" focusColor="#e00954" labelFloat="true" prefHeight="25.0" prefWidth="288.0" promptText="Contact" unFocusColor="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="285.0" prefHeight="37.0" prefWidth="590.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="184.0" text="Receipt Number" textFill="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Constantia" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="receiptNumber" focusColor="#e00954" labelFloat="true" prefHeight="25.0" prefWidth="286.0" promptText="Receipt Number" unFocusColor="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="322.0" prefHeight="37.0" prefWidth="590.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="184.0" text="Size" textFill="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Constantia" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="size" focusColor="#e00954" labelFloat="true" prefHeight="25.0" prefWidth="286.0" promptText="Size" unFocusColor="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="359.0" prefHeight="37.0" prefWidth="590.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="184.0" text="Choice" textFill="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Constantia" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="choice" focusColor="#e00954" labelFloat="true" prefHeight="25.0" prefWidth="285.0" promptText="Choice" unFocusColor="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="396.0" prefHeight="37.0" prefWidth="590.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="184.0" text="Amount" textFill="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Constantia" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="amount" focusColor="#e00954" labelFloat="true" prefHeight="25.0" prefWidth="284.0" promptText="Amount" unFocusColor="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="433.0" prefHeight="37.0" prefWidth="590.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="194.0" text="Registration Number" textFill="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Constantia" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="registrationNumber" focusColor="#e00954" labelFloat="true" prefHeight="25.0" prefWidth="283.0" promptText="Registration Number" unFocusColor="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="470.0" prefHeight="37.0" prefWidth="590.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="184.0" text="Member" textFill="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Constantia" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="member" focusColor="#e00954" labelFloat="true" prefHeight="25.0" prefWidth="283.0" promptText="Member" unFocusColor="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="500.0" prefHeight="37.0" prefWidth="590.0">
+               <children>
+                  <Label prefHeight="24.0" prefWidth="184.0" text="Date" textFill="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Constantia" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="date" focusColor="#e00954" labelFloat="true" prefHeight="25.0" prefWidth="283.0" promptText="Date" unFocusColor="#6f1c61">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="75.0" layoutY="-65.0" text="Name" textFill="#7d3f86">
+         <font>
+            <Font name="Constantia" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

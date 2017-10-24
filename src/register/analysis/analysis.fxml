@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="373.0" prefWidth="496.0" style="-fx-background-color: #000000;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="register.analysis.AnalysisController">
+    <stylesheets>
+        <URL value="@analysis.css" />
+    </stylesheets>
+   <children>
+      <Label layoutY="-1.0" prefHeight="69.0" prefWidth="496.0" text="       ANALYSIS" textFill="#ee0606">
+         <font>
+            <Font name="Forte" size="55.0" />
+         </font>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </Label>
+      <VBox layoutY="68.0" prefHeight="367.0" prefWidth="496.0">
+         <children>
+            <HBox prefHeight="46.0" prefWidth="496.0">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="31.0" prefWidth="64.0" text="   Date" textFill="#f55858">
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Constantia Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="date" focusColor="#f55858" prefHeight="25.0" prefWidth="181.0" stylesheets="@analysis.css" unFocusColor="#f55858">
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXButton defaultButton="true" onAction="#regular" prefHeight="25.0" prefWidth="64.0" text="Regular">
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Georgia" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton defaultButton="true" layoutX="361.0" layoutY="20.0" onAction="#gaming" prefHeight="25.0" prefWidth="73.0" text="e-Gaming">
+                     <font>
+                        <Font name="Georgia" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label prefHeight="42.0" prefWidth="354.0" text="Number Of Registrations" textFill="#ae7377">
+               <font>
+                  <Font name="AR DELANEY" size="31.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="75.0" top="25.0" />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="registration" alignment="CENTER" focusColor="#ae7377" stylesheets="@analysis.css" unFocusColor="#ae7377">
+               <VBox.margin>
+                  <Insets left="120.0" right="120.0" top="15.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <Label layoutX="85.0" layoutY="91.0" prefHeight="43.0" prefWidth="122.0" text="Amount" textFill="#ae7377">
+               <font>
+                  <Font name="AR DELANEY" size="34.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="190.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="amount" alignment="CENTER" focusColor="#ae7377" layoutX="130.0" layoutY="149.0" stylesheets="@analysis.css" unFocusColor="#ae7377">
+               <VBox.margin>
+                  <Insets left="120.0" right="120.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXButton defaultButton="true" onAction="#reset" prefHeight="25.0" prefWidth="77.0" ripplerFill="#dd969c" text="Reset">
+               <VBox.margin>
+                  <Insets left="210.0" top="30.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
